@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 600;
+    font-style:normal;
+    color: rgb(248, 244, 239);
+}
+body{
+    background-image: url("https://i.pinimg.com/originals/bb/3f/de/bb3fdecbefb89cc80ad210d5204c1072.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 25%;
+    padding: 36px;
+    width: 70vw;
+    height: 50vh;
+    background: rgba(255, 255, 255, 0.21);
+    border-radius: 16px;
+    box-shadow: 0px 0px 500px 100px rgba(29, 17, 17, 0.7);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    font-size: 30px;
+}
+.countdown{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    min-width: 40vw;
+}
+.countdown-item{
+    background-color:transparent;
+    padding: 6px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    min-width: 150px;
+    min-height: 200px;
+    font-size: 30px;
+    margin-top: 7%;
+    align-content: center;
+}
+.expired{
+    color:aqua;
+    margin: 0 auto;
+}
