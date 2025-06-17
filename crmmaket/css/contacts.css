@@ -1,0 +1,62 @@
+
+.footer{
+    display: flex;
+}
+.contacts{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.contacts p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.8px;
+    transition: 0.2s;
+}
+.contacts h5{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.8px;
+}
+.contacts p:hover{
+    color: #4452FE;
+    cursor: pointer;
+}
+.media{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin-bottom: 10%;
+    margin-top: 12%;
+    flex-direction: column;
+    margin-left: 25%;
+}
+.media img{
+    width: 13%;
+    height: 13%;
+}
+.media p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.8px;
+    transition: 0.2s;
+    margin-top: -12%;
+    margin-left: 12%;
+}
+.media p:hover{
+    color: #4452FE;
+    cursor: pointer;
+    margin-top: -12%;
+    margin-left: 12%;
+}
+.social-media img{
+    width: 50%;
+    height: 70%;
+    margin-left: -5%;
+}
