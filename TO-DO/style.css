@@ -78,7 +78,7 @@
 .todo__list li{
     cursor: pointer;
     font-size: 25px;
-    padding: 8px 10px 12px 50px;
+    padding: 10px 10px 12px 50px;
     position: relative;
     
 }
@@ -104,8 +104,8 @@
 .todo__list li.checked::after{
     content: '\2714';
     position: absolute;
-    top: 10px;
-    left: 11px;
+    top: 13px;
+    left: 12px;
     color: #fff;
     
 }
