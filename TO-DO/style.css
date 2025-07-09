@@ -5,30 +5,40 @@
 }
 .todo {
     min-height: 100vh;
-    background-color: #111;
-    font-family: sans-serif;
+    font-family: "Rethink Sans", sans-serif;
     padding: 20px;
+    background: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .todo__box {
-    max-width: 600px;
+    max-width: 800px;
     border-radius: 10px;
     background-color: #fff;
-    padding: 40px 30px 70px;
+    padding: 100px 90px 100px;
     margin: 100px auto 20px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 25px;
+    box-shadow: 0 0 70px rgba(41, 42, 114, 0.8);
+    backdrop-filter: blur(7px);
+    border: 0px solid rgba(255, 255, 255, 0.44);
 }
 .todo__title {
     font-weight: 300;
     text-align: center;
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 50px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 .todo__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f1f1f1;
-    border-radius: 30px;
+    border-radius: 50px;
     margin-bottom: 30px;
     padding-left: 10%;
 }
@@ -37,66 +47,109 @@
     padding: 10px;
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: 25px;
     width: 100;
 }
 .todo__btn{
     border-radius: none;
     outline: none;
     padding: 16px 30px;
-    background-color: #03793b;
-    font-size: 16px;
+    background-color: #030f79;
+    font-size: 25px;
     cursor: pointer;
-    border-radius: 30px;
+    border-radius: 50px;
     color: #FFF;
+    transition: 0.6s;
+}
+.todo__btn:hover{
+    border-radius: 1px solid #030f79;
+    outline: none;
+    padding: 16px 30px;
+    background-color: #f1f1f1;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+    color: #030f79;
 }
 .todo__list {
     list-style-type: none;
+    line-height: 5vh;
 }
 .todo__list li{
     cursor: pointer;
-    font-size: 18px;
-    padding: 12px 10px 12px 50px;
+    font-size: 25px;
+    padding: 8px 10px 12px 50px;
     position: relative;
+    
 }
 .todo__list li::before{
     content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+    line-height: 5vh;
     border-radius: 50%;
     border: 1px solid #111;
-    top: 12px;
-    left: 10px;
+    top: 21px;
+    left: 8px;
 }
 .todo__list li.checked {
     color: #555;
     text-decoration: line-through;
 }
 .todo__list li.checked::before{
-    border-color: #03793b;
-    background-color: #03793b;
+    border-color: #030f79;
+    background-color: #030f79;
 }
 .todo__list li.checked::after{
     content: '\2714';
     position: absolute;
-    top: 11px;
-    left: 14px;
+    top: 10px;
+    left: 11px;
     color: #fff;
+    
 }
 .todo__list li span{
     position: absolute;
-    top: 5px;
+    top: 12px;
     right: 0;
     width: 40px;
     height: 40px;
+    line-height: 5vh;
     border-radius: 50%;
     color: #555;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
+    font-size: 40px;
 }
 .todo__list li span:hover{
     background-color: #f1f1f1;
+}
+
+@media(max-width: 780px) {
+    .todo__row{
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 0;
+        background-color: transparent;
+    }
+    .todo__input{
+        width: 100%;
+        padding: 12px 20px;
+        background-color: #f1f1f1;
+        border-radius: 50px;
+    }
+    .todo__btn{
+        width: 100%;
+        padding: 12px 20px;
+    }
+    .todo__box{
+        padding: 50px 20px;
+        margin: 50px auto 20px;
+    }
+    .todo__list li.checked::after{
+        top:20px;
+    }
+    
 }

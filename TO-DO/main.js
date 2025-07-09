@@ -34,6 +34,12 @@ todoList.addEventListener('click', function (e) {
 
 })
 
+todoInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        addTask()
+    }
+})
+
 function saveData() {
     localStorage.setItem('data', todoList.innerHTML)
 }
