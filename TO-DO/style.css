@@ -173,10 +173,7 @@
     top: 10px;
 }
    .todo__list li.checked::after{
-    top:5px;
-    left: 13px;
-    content: '\2714';
-    size: 17px;
+    content: '';
 }
 .todo__list li span{
     top: 12px;
